@@ -1,6 +1,7 @@
 .title {
 color: #02ccba;
 }
+
 .cp_navi {
 	background-color: ##8A2BE2;
 	border: 1px solid #dedede;
@@ -80,4 +81,36 @@ color: #02ccba;
 }
 .cp_navi > ul > li > div ul > li:hover > a {
 	background-color: rgba( 255, 255, 255, 0.1);
+}
+
+
+.pagetop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+}
+.pagetop a {
+    display: block;
+    background-color: #ccc;
+    text-align: center;
+    color: #222;
+    font-size: 22px;
+    text-decoration: none;
+    padding: 5px 10px;
+    filter:alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+.pagetop a:hover {
+    display: block;
+    background-color: #b2d1fb;
+    text-align: center;
+    color: #fff;
+    font-size: 52px;
+    text-decoration: none;
+    padding:5px 10px;
+    filter:alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
 }

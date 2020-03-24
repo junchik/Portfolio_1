@@ -1,6 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html40/strict.dtd">
 <HTML>
+<p class="pagetop"><a href="#wrap">▲目次へ戻る</a></p>
 <HEAD>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <div class="cp_navi">
 <ul>
 <li>
@@ -115,33 +117,36 @@ href="stylesheet.css">
           </LI>
       </UL>
     </HR>
-      <IMG ID="LinkTarget_216" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_0.png">
-        <p id="pageTop"><a href="#">目次へ戻る</a></p>
-      <IMG ID="LinkTarget_217" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_1.png">
-        <p id="pageTop"><a href="#">目次へ戻る</a></p>
-      <IMG ID="LinkTarget_218" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_2.png">
-        <p id="pageTop"><a href="#">目次へ戻る</a></p>
-      <IMG ID="LinkTarget_219" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_3.png">
-        <p id="pageTop"><a href="#">目次へ戻る</a></p>
-      <IMG ID="LinkTarget_220" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_4.png">
-        <p id="pageTop"><a href="#">目次へ戻る</a></p>
-      <IMG ID="LinkTarget_221" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_5.png">
-        <p id="pageTop"><a href="#">目次へ戻る</a></p>
-      <IMG ID="LinkTarget_222" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_6.png">
-        <p id="pageTop"><a href="#">目次へ戻る</a></p>
-      <IMG ID="LinkTarget_223" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_7.png">
-        <p id="pageTop"><a href="#">目次へ戻る</a></p>
-      <IMG ID="LinkTarget_224" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_8.png">
-        <p id="pageTop"><a href="#">目次へ戻る</a></p>
-      <IMG ID="LinkTarget_225" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_9.png">
-        <p id="pageTop"><a href="#">目次へ戻る</a></p>
-      <IMG ID="LinkTarget_226" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_10.png">
-        <p id="pageTop"><a href="#">目次へ戻る</a></p>
-      <IMG ID="LinkTarget_227" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_11.png">
-        <p id="pageTop"><a href="#">目次へ戻る</a></p>
-      <IMG ID="LinkTarget_228" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_12.png">
-        <p id="pageTop"><a href="#">目次へ戻る</a></p>
-	<IMG ID="LinkTarget_229" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_13.png">
-        <p id="pageTop"><a href="#">目次へ戻る</a></p>
+      <IMG ID="LinkTarget_216" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_0.png"><br>
+      <IMG ID="LinkTarget_217" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_1.png"><br>
+      <IMG ID="LinkTarget_218" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_2.png"><br>
+      <IMG ID="LinkTarget_219" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_3.png"><br>
+      <IMG ID="LinkTarget_220" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_4.png"><br>
+      <IMG ID="LinkTarget_221" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_5.png"><br>
+      <IMG ID="LinkTarget_222" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_6.png"><br>
+      <IMG ID="LinkTarget_223" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_7.png"><br>
+      <IMG ID="LinkTarget_224" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_8.png"><br>
+      <IMG ID="LinkTarget_225" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_9.png"><br>
+      <IMG ID="LinkTarget_226" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_10.png"><br>
+      <IMG ID="LinkTarget_227" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_11.png"><br>
+      <IMG ID="LinkTarget_228" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_12.png"><br>
+		<IMG ID="LinkTarget_229" width=1123 height=1588 style="display:block; float:none" src="images/Portfolio_001_img_13.png"><br>
+<script>
+$(document).ready(function() {
+  var pagetop = $('.pagetop');
+    $(window).scroll(function () {
+       if ($(this).scrollTop() > 100) {
+            pagetop.fadeIn();
+       } else {
+            pagetop.fadeOut();
+            }
+       });
+       pagetop.click(function () {
+           $('body, html').animate({ scrollTop: 0 }, 500);
+              return false;
+   });
+});
+</script>
+
   </BODY>
 </HTML>
